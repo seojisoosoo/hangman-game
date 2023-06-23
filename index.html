@@ -9,18 +9,18 @@
   <body>
     <header class="title">현수야 사랑해 널 위한 행맨 게임이야</header>
     <ul class="text_field">
-      <li class="l">l</li>
-      <li class="o">o</li>
-      <li class="v">v</li>
-      <li class="e">e</li>
-      <li class="b">b</li>
-      <li class="o">o</li>
-      <li class="r">r</li>
-      <li class="i">i</li>
-      <li class="m">m</li>
-      <li class="o">o</li>
-      <li class="n">n</li>
-      <li class="g">g</li>
+      <li class="text_field--alphabet l">l</li>
+      <li class="text_field--alphabet o">o</li>
+      <li class="text_field--alphabet v">v</li>
+      <li class="text_field--alphabet e">e</li>
+      <li class="text_field--alphabet b">b</li>
+      <li class="text_field--alphabet o">o</li>
+      <li class="text_field--alphabet r">r</li>
+      <li class="text_field--alphabet i">i</li>
+      <li class="text_field--alphabet m">m</li>
+      <li class="text_field--alphabet o">o</li>
+      <li class="text_field--alphabet n">n</li>
+      <li class="text_field--alphabet g">g</li>
     </ul>
     <ul class="text_field-underline">
       <li>_</li>
@@ -36,14 +36,13 @@
       <li>_</li>
       <li>_</li>
     </ul>
-    <input type="text" />
+    <input type="text" class="text-input" onKeypress="handleInputText()" />
     <section class="hangman-images">
       <img src="./assets/smile.png" alt="좋은미소" id="smile" />
       <img src="./assets/badSmile.png" alt="나쁜미소" id="badSmile" />
       <img src="./assets/leftArm.png" alt="왼팔" id="leftArm" />
       <img src="./assets/body.png" alt="몸통" id="body" />
       <img src="./assets/rightArm.png" alt="오른팔" id="rightArm" />
-
       <img src="./assets/leftLeg.png" alt="왼다리" id="leftLeg" />
       <img src="./assets/rightLeg.png" alt="오른다리" id="rightLeg" />
     </section>

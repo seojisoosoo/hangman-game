@@ -27,12 +27,6 @@ body {
   margin-top: 200px;
 }
 
-.text_field > li {
-  display: flex;
-  justify-content: center;
-  width: 60px;
-}
-
 .text_field-underline > li {
   display: flex;
   justify-content: center;
@@ -48,8 +42,8 @@ body {
   margin-top: 350px;
 }
 
-input {
-  margin-top: 50px;
+.text-input {
+  margin-top: 140px;
   width: 100px;
   height: 100px;
 
@@ -65,38 +59,45 @@ input {
 }
 
 #badSmile {
+  display: none;
   position: absolute;
 }
 
 #smile {
+  display: none;
   position: absolute;
 }
 
 #leftArm {
+  display: none;
   position: absolute;
 
   margin: 90px 35px 0 0;
 }
 
 #rightArm {
+  display: none;
   position: absolute;
 
   margin: 90px 0 0 35px;
 }
 
 #body {
+  display: none;
   position: absolute;
 
   margin-top: 90px;
 }
 
 #leftLeg {
+  display: none;
   position: absolute;
 
   margin: 150px 35px 0 0;
 }
 
 #rightLeg {
+  display: none;
   position: absolute;
 
   margin: 150px 0 0 35px;
@@ -104,4 +105,50 @@ input {
 
 footer {
   margin-top: 320px;
+}
+
+.text_field--alphabet {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+}
+
+.l {
+  visibility: hidden;
+}
+
+.o {
+  visibility: hidden;
+}
+
+.v {
+  visibility: hidden;
+}
+
+.e {
+  visibility: hidden;
+}
+
+.b {
+  visibility: hidden;
+}
+
+.r {
+  visibility: hidden;
+}
+
+.i {
+  visibility: hidden;
+}
+
+.m {
+  visibility: hidden;
+}
+
+.n {
+  visibility: hidden;
+}
+
+.g {
+  visibility: hidden;
 }
