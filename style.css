@@ -9,7 +9,8 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   background-color: skyblue;
 
@@ -19,4 +20,39 @@ body {
 
 .title {
   margin-top: 50px;
+}
+
+.text_field {
+  display: flex;
+  margin-top: 200px;
+}
+
+.text_field > li {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+}
+
+.text_field-underline > li {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+}
+
+.text_field-underline {
+  display: flex;
+
+  position: absolute;
+  z-index: -1;
+
+  margin-top: 350px;
+}
+
+input {
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+
+  font-family: "KOTRAHOPE";
+  font-size: 70px;
 }
