@@ -56,3 +56,52 @@ input {
   font-family: "KOTRAHOPE";
   font-size: 70px;
 }
+
+.hangman-images {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+#badSmile {
+  position: absolute;
+}
+
+#smile {
+  position: absolute;
+}
+
+#leftArm {
+  position: absolute;
+
+  margin: 90px 35px 0 0;
+}
+
+#rightArm {
+  position: absolute;
+
+  margin: 90px 0 0 35px;
+}
+
+#body {
+  position: absolute;
+
+  margin-top: 90px;
+}
+
+#leftLeg {
+  position: absolute;
+
+  margin: 150px 35px 0 0;
+}
+
+#rightLeg {
+  position: absolute;
+
+  margin: 150px 0 0 35px;
+}
+
+footer {
+  margin-top: 320px;
+}
