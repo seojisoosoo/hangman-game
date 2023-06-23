@@ -65,3 +65,16 @@ function clear() {
   input.value = "";
   input.focus();
 }
+
+function reset() {
+  save = 0;
+  arr = [];
+
+  const alphabets = ["l", "o", "v", "e", "b", "r", "i", "m", "n", "g"];
+  alphabets.forEach((alphabet) =>
+    document.querySelectorAll(`.${alphabet}`).forEach((text) => (text.style.visibility = "hidden")),
+  );
+
+  const hangman = [smile, body, leftArm, rightArm, leftLeg, rightLeg, badSmile];
+  hangman.forEach((img) => (img.style.display = "none"));
+}

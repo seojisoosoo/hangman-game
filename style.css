@@ -24,7 +24,7 @@ body {
 
 .text_field {
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .text_field-underline > li {
@@ -151,4 +151,13 @@ footer {
 
 .g {
   visibility: hidden;
+}
+
+.button {
+  margin-top: 10px;
+
+  font-family: "KOTRAHOPE";
+  font-size: 70px;
+
+  cursor: pointer;
 }
