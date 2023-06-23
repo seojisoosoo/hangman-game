@@ -1,5 +1,6 @@
 // 목숨
 var save = 0;
+var arr = [];
 
 function handleInputText() {
   const word = "loveborimong";
@@ -29,21 +30,38 @@ function handleInputText() {
   const hangman = [smile, body, leftArm, rightArm, leftLeg, rightLeg, badSmile];
 
   // 인풋
-  const input = document.querySelector(".text-input").value;
+  const input = document.querySelector(".text-input");
 
   // 포함되는 알파벳인지 검사
   if (window.event.keyCode == 13) {
-    if (word.includes(input)) {
-      const alphabets = document.querySelectorAll(`.${input}`);
-      alphabets.forEach((alphabet) => (alphabet.style.visibility = "visible"));
-    } else {
-      if (save === hangman.length) {
-        badSmile.style.display = "block";
-        smile.style.display = "none";
+    if (!arr.includes(input.value)) {
+      arr.push(input.value);
+
+      if (word.includes(input.value)) {
+        const alphabets = document.querySelectorAll(`.${input.value}`);
+        alphabets.forEach((alphabet) => (alphabet.style.visibility = "visible"));
+      } else {
+        if (save === hangman.length - 2) {
+          rightLeg.style.display = "block";
+          badSmile.style.display = "block";
+          smile.style.display = "none";
+
+          alert("게임오버!");
+        } else {
+          hangman[save].style.display = "block";
+          save += 1;
+        }
       }
-      hangman[save].style.display = "block";
-      save += 1;
+      clear();
+    } else {
+      clear();
+      alert("이미 입력한 알파벳입니다!");
     }
-    input = "";
   }
+}
+
+function clear() {
+  const input = document.querySelector(".text-input");
+  input.value = "";
+  input.focus();
 }
